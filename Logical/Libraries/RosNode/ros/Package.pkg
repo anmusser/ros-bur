@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.2.102?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">duration.h</Object>
+    <Object Type="File">msg.h</Object>
+    <Object Type="File">publisher.h</Object>
+    <Object Type="File">node_handle.h</Object>
+    <Object Type="File">service_client.h</Object>
+    <Object Type="File">service_server.h</Object>
+    <Object Type="File">subscriber.h</Object>
+    <Object Type="File">time.h</Object>
+    <Object Type="File">duration.cpp</Object>
+    <Object Type="File">time.cpp</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,54 @@
+VAR
+	NextBoxPosition : REAL;
+	AutoStep : AutoSteps_enum;
+	StartAutoMode : BOOL;
+	NextBoxIndex : USINT;
+	TON_ShowBox1 : TON;
+	TON_ShowBox2 : TON;
+	TON_ShowBox3 : TON;
+END_VAR
+VAR CONSTANT
+	EXIT_POSITION : REAL := 8.5;
+END_VAR
+VAR
+	NotifyBox1 : BOOL;
+	NotifyBox2 : BOOL;
+	NotifyBox3 : BOOL;
+END_VAR
+VAR CONSTANT
+	NOTIFY_POSITION : REAL := 2;
+END_VAR
+VAR
+	TempString : STRING[80];
+	BoxPosition1 : REAL;
+	BoxPosition2 : REAL;
+	BoxPosition3 : REAL;
+	WorklightOn : BOOL;
+	ShowBox2 : BOOL;
+	ShowBox3 : BOOL;
+	BoxOffset2 : LREAL;
+	BoxOffset3 : LREAL;
+	BoxOffset1 : LREAL;
+	ShowBox1 : BOOL;
+	MotorPosition : REAL;
+END_VAR
+VAR CONSTANT
+	MOTOR_PERIOD : REAL := 2.513;
+END_VAR
+VAR
+	WorklightTransform : STRING[1000];
+	Box1Transform : STRING[1000];
+	Box2Transform : STRING[1000];
+	Box3Transform : STRING[1000];
+	Motor1Transform : STRING[1000];
+	Motor2Transform : STRING[1000];
+	Motor3Transform : STRING[1000];
+	Motor4Transform : STRING[1000];
+	TotalTransform : STRING[10000];
+	PositionString : STRING[80];
+	OldParameters : MpAxisBasicParType;
+	ConveyorParameters : MpAxisBasicParType;
+	Conveyor : MpAxisBasic;
+	LocalCommand : RosWrapper_FulfilledCommand_Type;
+	RosWrapper_0 : RosWrapper;
+END_VAR

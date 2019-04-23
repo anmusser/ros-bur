@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="mySvg" version="1.1" viewBox="0 0 160 200"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:cc="http://creativecommons.org/ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<svg version="1.1"/>
+<g id="Shaft">
+<circle id="MotorBase" class="MotorBase" cx="15" cy="30" r="30"
+fill="#f80" stroke-width=".25"/>
+<path id="MotorPart" class="MotorPart"
+d="m15 30v26a26 26 0 0 1-26-26h52a26 26 0 0 0-26-26z"
+fill="#fff" stroke="#000" stroke-width="1.0744"/>
+</g>
+</svg>

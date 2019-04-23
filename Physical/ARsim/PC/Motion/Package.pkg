@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.2.102?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="NC mapping">Acp10map.ncm</Object>
+    <Object Type="File" Description="NC manager configuration">Acp10cfg.ncc</Object>
+    <Object Type="File">Conveyor.mpaxisbasic</Object>
+    <Object Type="File" Description="NC operating system">Acp10sys.br</Object>
+    <Object Type="File">RRBot.mpaxisbasic</Object>
+  </Objects>
+</Package>

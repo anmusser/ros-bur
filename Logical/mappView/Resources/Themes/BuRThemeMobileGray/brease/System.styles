@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Styles id="BuRThemeMobileGraysystemStyles" xmlns="http://www.br-automation.com/iat2015/styles/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<Style id="default" xsi:type="system.brease.Page"  />
+	
+	<Style id="default" xsi:type="system.brease.Dialog" 
+		fontSize="20px" 
+		textColor="#FFFFFF" 
+		headerBorderWidth="0px" 
+		headerBackColor="#3388CC" 
+		cornerRadius="8px 8px 0px 0px" 
+		borderWidth="1px" 
+		borderColor="#DDDDDD" 
+		shadow="1px 1px 14px 0px rgba(5, 112, 193, 0.75)"  />
+	
+	<Style id="default" xsi:type="system.brease.MessageBox"	
+		headerBorderWidth="0px" 
+		fontSize="20px" 
+		textColor="#000000" 
+		cornerRadius="8px 8px 0px 0px" 
+		borderWidth="1px" 
+		borderColor="#DDDDDD" 
+		shadow="1px 1px 14px 0px rgba(5, 112, 193, 0.75)" />
+	
+	<Style id="default" xsi:type="system.brease.Area" 
+		backColor="#FFFFFF" />
+	
+	<Style id="transparent" xsi:type="system.brease.Area" 
+		backColor="transparent" />
+	
+	<Style id="default" xsi:type="system.brease.Scrollbar"
+		backColor="rgba(51, 136, 204,0.5)"
+		borderColor="rgba(51, 136, 204,0.9)" />
+	
+</Styles>

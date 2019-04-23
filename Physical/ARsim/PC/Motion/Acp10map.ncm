@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=?>
+<NcMapping NcSwId="Acp10" DisabledNodesAreHidden="False">
+  <NcObject Name="gConveyor" ModuleId="8V1016.50-2" Type="ncAXIS" Channel="1" AcoposSimulation="Standard" InitParameter="gConveyori" AcoposParameter="gConveyora" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1016.50-2_ncV_AXIS1" ModuleId="8V1016.50-2" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gRRBotJ1" ModuleId="8V1016.50-2a" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gRRBotJ1i" AcoposParameter="gRRBotJ1a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1016.50-2a_ncV_AXIS1" ModuleId="8V1016.50-2a" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gRRBotJ2" ModuleId="8V1016.50-2b" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gRRBotJ2i" AcoposParameter="gRRBotJ2a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1016.50-2b_ncV_AXIS1" ModuleId="8V1016.50-2b" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+</NcMapping>

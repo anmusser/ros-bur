@@ -1,0 +1,59 @@
+<svg id='mySvg' height='100%' width='100%' viewBox='-50 0 1100 300' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+	<g transform="translate(0,100)" xmlns="http://www.w3.org/2000/svg" class="cAll" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+		<!-- Left belt -->
+		<g transform="translate(0,0)" xmlns="http://www.w3.org/2000/svg" class="cBelt" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<path id="outerbelt1" fill="lightgrey" stroke="black" stroke-width="3" d="M 0 110 L 350 110 A 40 40 180 0 1 350 190 L 0 190 A 40 40 180 0 1 0 110"></path>
+		</g>
+		
+		<!-- Right belt -->
+		<g transform="translate(435,0)" xmlns="http://www.w3.org/2000/svg" class="cBelt2" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<path id="outerbelt1" fill="lightgrey" stroke="black" stroke-width="3" d="M 0 110 L 350 110 A 40 40 180 0 1 350 190 L 0 190 A 40 40 180 0 1 0 110"></path>
+		</g>
+		
+		<!-- Transfer between belts --> 
+		<g transform="translate(0,0)" xmlns="http://www.w3.org/2000/svg" class="cBelt" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<path id="transfer" fill="lightgrey" stroke="black" stroke-width="3" d="M 370 110 L 415 110 A 40 40 90 0 0 392 130 A 40 40 90 0 0 370 110 "></path>
+		</g>
+		
+		<!-- Worklight -->
+		<g transform="translate(200,0)" xmlns="http://www.w3.org/2000/svg" class="cBelt2" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<rect id="work_light" x="600" y="-50" display="true" transform="rotate(-40,600,-50)" stroke="black" style="stroke-width: 3px;" width="80" height="40" fill="lightgrey"/>
+			<path id="work_light_beam" fill="yellow" display="true" stroke="black" stroke-width="2" d="M 620 -13 L 560 107 L 250 107 L 595 -43 Z"></path>
+		</g>
+		
+		<!-- Photoeye -->
+		<g transform="translate(270,0)" xmlns="http://www.w3.org/2000/svg" class="cBelt2" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<rect id="photoeye" x="0" y="0" display="true" transform="translate(0, -70)" stroke="black" style="stroke-width: 2px;" width="10" height="40" fill="lightgrey"/>	
+			<rect id="photoeye_beam" x="2" y="0" display="true" transform="translate(0, -25)" stroke="black" style="stroke-width: 1px;" width="6" height="132" fill="red"/>
+		</g>
+		
+		<!-- Boxen! -->
+		<rect id="box_blue_1" x="0" y="68" display="true" transform="translate(0, 0)" stroke="black" style="stroke-width: 1px;" width="80" height="40" fill="royalblue"/>	
+		<rect id="box_green_2" x="0" y="48" display="true" transform="translate(0, 0)" stroke="black" style="stroke-width: 1px;" width="60" height="60" fill="green"/>	
+		<rect id="box_red_3" x="0" y="58" display="true" transform="translate(0, 0)" stroke="black" style="stroke-width: 1px;" width="60" height="50" fill="red"/>
+		
+		<!-- Downstream -->
+		<path id="transfer" fill="lightgrey" stroke="black" stroke-width="3" d="M 830 110 L 805 110 A 40 40 90 0 1 830 150 L 830 200 L 1005 200 L 1005 -13 L 830 -13 L 830 110 "></path>
+	<!--	<rect id="downstream" x="830" y="-13" display="true" transform="translate(0, 0)" stroke="black" style="stroke-width: 3px;" width="175" height="200" fill="lightgrey"/> -->
+		
+		<!-- Motors -->
+		<g transform="translate(0,150)" xmlns="http://www.w3.org/2000/svg" class="cMotor" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<circle id="motorBlock1" class="motorPart" cx="0" cy="0" r="30" fill="#FF8800" stroke="Black" stroke-width="2"/>
+			<path id="motorAxis1" class="motorPart" fill="White" stroke="Black" stroke-width="2" d="M 0 0 l 0 25 a 25 25 0 0 1 -25 -25 l 50 0 a 25 25 0 0 0 -25 -25 Z"></path>
+		</g>	
+		<g transform="translate(350,150)" xmlns="http://www.w3.org/2000/svg" class="cMotor" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<circle id="motorBlock2" class="motorPart" cx="0" cy="0" r="30" fill="#FF8800" stroke="Black" stroke-width="2"/>
+			<path id="motorAxis2" class="motorPart" fill="White" stroke="Black" stroke-width="2" d="M 0 0 l 0 25 a 25 25 0 0 1 -25 -25 l 50 0 a 25 25 0 0 0 -25 -25 Z"></path>
+		</g>	
+		<g transform="translate(435,150)" xmlns="http://www.w3.org/2000/svg" class="cMotor" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<circle id="motorBlock3" class="motorPart" cx="0" cy="0" r="30" fill="#FF8800" stroke="Black" stroke-width="2"/>
+			<path id="motorAxis3" class="motorPart" fill="White" stroke="Black" stroke-width="2" d="M 0 0 l 0 25 a 25 25 0 0 1 -25 -25 l 50 0 a 25 25 0 0 0 -25 -25 Z"></path>
+		</g>	
+		<g transform="translate(785,150)" xmlns="http://www.w3.org/2000/svg" class="cMotor" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">
+			<circle id="motorBlock4" class="motorPart" cx="0" cy="0" r="30" fill="#FF8800" stroke="Black" stroke-width="2"/>
+			<path id="motorAxis4" class="motorPart" fill="White" stroke="Black" stroke-width="2" d="M 0 0 l 0 25 a 25 25 0 0 1 -25 -25 l 50 0 a 25 25 0 0 0 -25 -25 Z"></path>
+		</g>
+	</g>
+	
+</svg>

@@ -1,0 +1,18 @@
+VAR
+	joint1ActualPosition : REAL;
+	joint2ActualPosition : REAL;
+	joint2SetPosition : REAL;
+	joint1SetPosition : REAL;
+	redCaseComplete : BOOL;
+	greenCaseComplete : BOOL;
+	blueCaseComplete : BOOL;
+	speakNow : BOOL;
+	textCommand : STRING[1000];
+	wakeCommand : BOOL;
+	TestVar : USINT;
+	command : USINT;
+	ROSCommand : RosWrapper_FulfilledCommand_Type;
+	gConveyor : ACP10AXIS_typ;
+	gRRBotJ1 : ACP10AXIS_typ;
+	gRRBotJ2 : ACP10AXIS_typ;
+END_VAR

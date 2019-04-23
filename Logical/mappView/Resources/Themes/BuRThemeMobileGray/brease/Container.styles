@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Styles id="BuRThemeMobileGraycontainerStyles" xmlns="http://www.br-automation.com/iat2015/styles/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!--fly out-->
+	
+	<Style id="transparent" xsi:type="widgets.brease.FlyOut" 
+		backColor="transparent" 
+		borderStyle="none" 
+		borderWidth="0px" 
+		buttonBorderWidth="0px" 
+		buttonBackColor="transparent" />
+	
+	<!--group box-->
+	
+	<Style id="transparent" xsi:type="widgets.brease.GroupBox" 
+		borderWidth="0px" 
+		backColor="transparent" 
+		fontSize="16px" />
+	
+	<Style id="GroupBox1" xsi:type="widgets.brease.GroupBox" 
+		headerBackColor="#FF8500" 
+		backColor="#FFFFFF" 
+		fontSize="16px" 
+		textColor="#FFFFFF" 
+		cornerRadius="4px" 
+		borderWidth="1px" 
+		borderColor="#DDDDDD" />
+
+</Styles>

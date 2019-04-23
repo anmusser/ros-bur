@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentHeader" height="100" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput1" top="58" left="1019" width="400" height="30" zIndex="1" backColor="rgba(255, 255, 255, 0)" />
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="6" left="1133" width="51" height="60" zIndex="2" image="Media/SVGsymbols/DateTime/Calendar.svg" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(71, 71, 71, 1)" backColor="rgba(255, 255, 255, 0)" style="transparent" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="13" left="13" width="358" height="96" zIndex="3" image="Media/Pix/logo.svg" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="14" left="387" width="170" height="75" zIndex="4" image="Media/BackGround/Bootlogo.png" opacity="1" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="0" left="0" width="1600" height="100" zIndex="0" borderStyle="none" backGroundGradient="linear-gradient(to bottom, rgba(255,170,77,1) 0%,rgba(252,252,252,1) 100%)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image3" top="10" left="1309" width="280" height="96" zIndex="5" image="Media/BackGround/mappView.png" />
+  </Widgets>
+</Content>

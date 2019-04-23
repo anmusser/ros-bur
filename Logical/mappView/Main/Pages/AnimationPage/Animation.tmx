@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Animation</prop>
+  </header>
+  <body>
+    <tu tuid="Tab1">
+      <tuv xml:lang="de">
+        <seg>Spritzguss</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Injection mold</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tab2">
+      <tuv xml:lang="de">
+        <seg>Ski Lift</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Ski lift</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tab3">
+      <tuv xml:lang="de">
+        <seg>Box Lift</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Box lift</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tab4">
+      <tuv xml:lang="de">
+        <seg>Conveyor</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Conveyor</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Start">
+      <tuv xml:lang="de">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Moved">
+      <tuv xml:lang="de">
+        <seg>Bewegt:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Moved:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="From">
+      <tuv xml:lang="de">
+        <seg>von 6 Boxen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>out of 6 boxes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Click">
+      <tuv xml:lang="de">
+        <seg>Click Koordinate</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Click coordinates</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

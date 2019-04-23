@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentAnimationPage" height="1350" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="20" left="20" width="1560" height="1290" zIndex="0" backColor="rgba(240, 240, 240, 1)" borderStyle="solid" borderWidth="2px" cornerRadius="0px" borderColor="rgba(0, 0, 0, 1)" padding="0px" margin="0px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" zIndex="0" text="Conveyor">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Paper" id="PaperConveyor" top="16" left="17" width="1529" height="556" zIndex="1" svgFilePath="Media/Animation/conveyor.svg" transitionTime="1" borderStyle="none" borderColor="rgba(204, 204, 204, 1)" backColor="rgba(255, 255, 255, 0)" />
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="641" left="70" width="425" height="550" zIndex="2" text="Move Parameters" backColor="rgba(245, 245, 245, 1)" fontSize="30px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="Label1" top="36" left="24" width="180" height="50" zIndex="0" text="Speed:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="36" left="215" width="160" height="50" zIndex="1" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" unitWidth="20" fontSize="30px" unitFontSize="30px" rotation="0deg" />
+                <Widget xsi:type="widgets.brease.Label" id="Label2" top="106" left="24" width="180" height="50" zIndex="2" text="Acceleration:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="106" left="215" width="160" height="50" zIndex="3" unit="{'metric':'MSK','imperial':'MSK','imperial-us':'MSK'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label3" top="176" left="24" width="180" height="50" zIndex="4" text="Deceleration:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="176" left="215" width="160" height="50" zIndex="5" unit="{'metric':'MSK','imperial':'MSK','imperial-us':'MSK'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label12" top="247" left="24" width="180" height="50" zIndex="6" text="Direction:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label13" top="317" left="24" width="180" height="50" zIndex="7" text="Position:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput6" top="317" left="215" width="160" height="50" zIndex="8" unit="{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label14" top="384" left="24" width="180" height="50" zIndex="9" text="Distance:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput7" top="384" left="215" width="160" height="50" zIndex="10" unit="{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBox1" top="247" left="215" width="160" height="50" zIndex="11" dataProvider="[{'value':'0','text':'FORWARD'},{'value':'1','text':'BACKWARD'}]" selectedValue="0" textAlign="right" fontSize="20px" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="641" left="565" width="425" height="550" zIndex="3" text="System Status" backColor="rgba(245, 245, 245, 1)" fontSize="30px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="Label5" top="96" left="24" width="185" height="50" zIndex="0" text="Actual Position:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label6" top="166" left="24" width="185" height="50" zIndex="1" text="Actual Speed:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label7" top="300" left="24" width="185" height="50" zIndex="2" text="Blue Case:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label8" top="370" left="24" width="185" height="50" zIndex="3" text="Green Case:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="96" left="222" width="160" height="50" zIndex="4" unit="{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}" unitAlign="right" useDigitGrouping="false" borderWidth="1px" backColor="rgba(220, 220, 220, 1)" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="166" left="222" width="160" height="50" zIndex="5" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" borderWidth="1px" backColor="rgba(220, 220, 220, 1)" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="300" left="222" width="160" height="50" zIndex="6" unit="{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}" unitAlign="right" borderWidth="1px" backColor="rgba(220, 220, 220, 1)" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="370" left="222" width="160" height="50" zIndex="7" unit="{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}" unitAlign="right" borderWidth="1px" backColor="rgba(220, 220, 220, 1)" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label9" top="437" left="24" width="185" height="50" zIndex="8" text="Red Case:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput5" top="437" left="222" width="160" height="50" zIndex="9" unit="{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}" unitAlign="right" borderWidth="1px" backColor="rgba(220, 220, 220, 1)" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label10" top="44" left="24" width="150" zIndex="10" text="Axis Data:" fontSize="26px" bold="true" />
+                <Widget xsi:type="widgets.brease.Label" id="Label11" top="247" left="24" width="317" zIndex="11" text="Case Position Data:" fontSize="26px" bold="true" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="641" left="1060" width="425" height="550" zIndex="4" text="Commands" backColor="rgba(245, 245, 245, 1)" fontSize="30px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="Label20" top="44" left="35" width="300" zIndex="0" text="Voice Commands:" fontSize="26px" bold="true" />
+                <Widget xsi:type="widgets.brease.Label" id="Label21" top="204" left="35" width="300" zIndex="1" text="Axis Commands:" fontSize="26px" bold="true" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="88" left="94" width="250" height="60" zIndex="2" mouseDownText="DISABLE VOICE" text="ENABLE VOICE" textAlign="center" fontSize="20px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="253" left="94" width="250" height="60" zIndex="3" mouseDownText="STOP AUTO MODE" text="START AUTO MODE" textAlign="center" fontSize="20px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="331" left="94" width="250" height="60" zIndex="4" mouseDownText="DISTANCE MOVE" text="DISTANCE MOVE" textAlign="center" fontSize="20px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton4" top="412" left="94" width="250" height="60" zIndex="5" mouseDownText="JOG MOVE" text="JOG MOVE" textAlign="center" fontSize="20px" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.Rectangle" id="Background" top="-1" left="-1" width="1558" height="1258" zIndex="0" borderWidth="1px" backGroundGradient="linear-gradient(to bottom, #ffaa4d 0%, #ffffff 100%)" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" zIndex="1" text="Robot">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Paper" id="PaperRobot" top="16" left="17" width="1000" height="1000" zIndex="1" svgFilePath="Media/Animation/rrbot.svg" transitionTime="10" borderStyle="none" borderColor="rgba(204, 204, 204, 1)" backColor="rgba(255, 255, 255, 0)" />
+            <Widget xsi:type="widgets.brease.Rectangle" id="BackgroundRobot" top="-1" left="-1" width="1558" height="1258" zIndex="0" borderWidth="1px" backGroundGradient="linear-gradient(to bottom, #ffaa4d 0%, #ffffff 100%)" />
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="49" left="1082" width="425" height="550" zIndex="2" text="Move Parameters" backColor="rgba(245, 245, 245, 1)" fontSize="30px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="Label4" top="36" left="24" width="180" height="50" zIndex="0" text="Speed:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput4" top="36" left="215" width="160" height="50" zIndex="1" unit="{'metric':'E96','imperial':'E96','imperial-us':'E96'}" unitAlign="right" unitWidth="20" fontSize="30px" unitFontSize="30px" rotation="0deg" />
+                <Widget xsi:type="widgets.brease.Label" id="Label15" top="106" left="24" width="180" height="50" zIndex="2" text="Acceleration:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput5" top="106" left="215" width="160" height="50" zIndex="3" unit="{'metric':'M45','imperial':'M45','imperial-us':'M45'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label16" top="176" left="24" width="180" height="50" zIndex="4" text="Deceleration:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput8" top="176" left="215" width="160" height="50" zIndex="5" unit="{'metric':'M45','imperial':'M45','imperial-us':'M45'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label17" top="247" left="24" width="180" height="50" zIndex="6" text="Direction:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label18" top="317" left="24" width="180" height="50" zIndex="7" text="Position:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput9" top="317" left="215" width="160" height="50" zIndex="8" unit="{'metric':'DD','imperial':'DD','imperial-us':'DD'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.Label" id="Label19" top="384" left="24" width="180" height="50" zIndex="9" text="Distance:" fontSize="26px" />
+                <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput10" top="384" left="215" width="160" height="50" zIndex="10" unit="{'metric':'DD','imperial':'DD','imperial-us':'DD'}" unitAlign="right" fontSize="30px" unitFontSize="30px" />
+                <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBox2" top="247" left="215" width="160" height="50" zIndex="11" dataProvider="[{'value':'0','text':'FORWARD'},{'value':'1','text':'BACKWARD'}]" selectedValue="0" textAlign="right" fontSize="20px" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="648" left="1082" width="425" height="550" zIndex="3" text="Commands" backColor="rgba(245, 245, 245, 1)" fontSize="30px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.Label" id="Label22" top="44" left="35" width="300" zIndex="0" text="Voice Commands:" fontSize="26px" bold="true" />
+                <Widget xsi:type="widgets.brease.Label" id="Label23" top="204" left="35" width="300" zIndex="1" text="Axis Commands:" fontSize="26px" bold="true" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="88" left="94" width="250" height="60" zIndex="2" mouseDownText="DISABLE VOICE" text="ENABLE VOICE" textAlign="center" fontSize="20px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton6" top="253" left="94" width="250" height="60" zIndex="3" mouseDownText="POSITION MOVE" text="POSITION MOVE" textAlign="center" fontSize="20px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton7" top="331" left="94" width="250" height="60" zIndex="4" mouseDownText="DISTANCE MOVE" text="DISTANCE MOVE" textAlign="center" fontSize="20px" />
+                <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton8" top="412" left="94" width="250" height="60" zIndex="5" mouseDownText="JOG MOVE" text="JOG MOVE" textAlign="center" fontSize="20px" />
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" zIndex="2" text="Alarms">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart1" top="20" left="20" width="1485" height="1000" zIndex="0">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis1" zIndex="0">
+                  <Widgets />
+                </Widget>
+                <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis1" zIndex="1">
+                  <Widgets>
+                    <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph1" zIndex="0" xAxisRefId="xAxisRefId1" />
+                  </Widgets>
+                </Widget>
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="0" zIndex="3" text="Graph">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem5" left="0" zIndex="4" text="Settings">
+          <Widgets />
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

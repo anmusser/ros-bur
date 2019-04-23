@@ -1,0 +1,16 @@
+VAR
+	bytes : INT;
+	size : INT;
+	mode : INT;
+	recvCounter : INT;
+	spinOnce : BOOL;
+	spinCounter : DINT;
+	spinMultiple : BOOL;
+	New_Variable : USINT;
+	spinContinuous : BOOL;
+	loopCounter : UDINT;
+	delayCounts : UDINT := 1000;
+	totalTime : TIME;
+	startTime : TIME;
+	Go : BOOL;
+END_VAR

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentBottomHome" height="80" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationHome" top="0" left="760" width="80" height="80" zIndex="0" image="Media/SVGsymbols/Symbols/Home.svg" pageId="NavigationPage" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" style="transparent" />
+  </Widgets>
+</Content>

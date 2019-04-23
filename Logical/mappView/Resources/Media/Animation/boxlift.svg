@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mySvg" height="100%" width="100%" viewBox="0 0 400 300" version="1.1">
+    <g id="tower">
+        <rect x="62.5571" y="62.018856048583984" style="stroke-width: 1px;" width="67.29475" height="43.60699865410497" fill="khaki" />
+        <rect x="62.5571" y="104.54913330078124" style="stroke-width: 1px;" width="20.4575" height="26.9172" fill="khaki" rx="0" ry="0" />
+        <rect x="62.5571" y="130.92869567871094" style="stroke-width: 1px;" width="67.29475" height="43.60699865410497" fill="khaki" />
+        <rect x="62.5571" y="173.45901489257812" style="stroke-width: 1px;" width="20.4575" height="26.9172" fill="khaki" rx="0" ry="0" />
+        <rect x="62.5571" y="199.83848571777344" style="stroke-width: 1px;" width="67.29475" height="43.60699865410497" fill="khaki" />
+    </g>
+    <g>
+        <path id="lowerConveyor" display="none" d="M185.30281652191283,192.301478841584l170.12113055181695,0" stroke="black" style="fill: none; stroke-width: 1px;" />
+        <circle cx="187.996" cy="227.833" stroke="black" style="stroke-width: 1px;" r="8.40942" fill="khaki" />
+        <circle cx="344.659" cy="228.37" stroke="black" style="stroke-width: 1px;" r="8.40942" fill="khaki" />
+		<path d="M188.53296457036515,215.98923119690028l155.04710632570652,-2.842170943040401e-14a12.119412,12.119412,0,1,1,0,24.226110363391683l-154.50874831763122,-2.842170943040401e-14a12.119681,12.119681,0,1,1,-0.5383580080753632,-24.226110363391655" stroke="black" id="e605_path" style="fill: none; stroke-width: 1px;" />
+    </g>
+	
+	<g>
+        <path id="upperConveyor" display="none" d="M185.30281652191283,125.301478841584l170.12113055181695,0" stroke="black" style="fill: none; stroke-width: 1px;" />
+       
+		<circle cx="187.996" cy="227.833" stroke="black" style="stroke-width: 1px;" r="8.40942" fill="khaki" transform="matrix(1 0 0 1 0 -66.7564)" />
+        <circle cx="344.659" cy="228.37" stroke="black" style="stroke-width: 1px;" r="8.40942" fill="khaki" transform="matrix(1 0 0 1 0 -66.7564)" />
+		<path d="M188.53296457036515,215.98923119690028l155.04710632570652,-2.842170943040401e-14a12.119412,12.119412,0,1,1,0,24.226110363391683l-154.50874831763122,-2.842170943040401e-14a12.119681,12.119681,0,1,1,-0.5383580080753632,-24.226110363391655" stroke="black" id="e1773_path" style="fill: none; stroke-width: 1px;" transform="matrix(1 0 0 1 0 -66.7564)" />
+	</g>
+	
+    <g id="platform" transform="translate(131, 240)">
+        <rect class="cPlatform" x="0" y="8" style="stroke-width: 1px;" width="43" height="5" fill="black" rx="0" ry="0" />
+        <rect class="cPlatform" id="platform_right" x="39" y="0" style="stroke-width: 1px;" width="4" height="10" fill="black" />
+		<rect class="cPlatform" id="platform_left" x="0" y="0" style="stroke-width: 1px;" width="4" height="10" fill="black" />
+	</g>
+	
+    <path id="platform_lift" d="M130.8,63l0,177.65814266487214" stroke="black" style="fill: none; stroke-width: 1px; stroke-dasharray: 2px, 2px;" />
+    <path d="M174.2,63l0,177.65814266487214" stroke="black" style="fill: none; stroke-width: 1px; stroke-dasharray: 2px, 2px;" />
+    
+	<rect id="box_blue_1" x="0" y="0" display="none" transform="translate(91, 107)" stroke="black" style="stroke-width: 1px;" width="31.763" height="20.9974" fill="royalblue"/>
+    <rect id="box_blue_2" x="0" y="0" display="none" transform="translate(91, 107)" stroke="black" style="stroke-width: 1px;" width="31.763" height="20.9974" fill="royalblue"/>
+	<rect id="box_green_1" x="0" y="0" display="none" transform="translate(91, 107)" stroke="black" style="stroke-width: 1px;" width="31.763" height="20.9974" fill="limegreen"/>
+    <rect id="box_green_2" x="0" y="0" display="none" transform="translate(91, 107)" stroke="black" style="stroke-width: 1px;" width="31.763" height="20.9974" fill="limegreen"/>
+	<rect id="box_red_1" x="0" y="0" display="none" transform="translate(91, 176)" stroke="black" style="stroke-width: 1px;" width="31.763" height="20.9974" fill="orangered"/>
+    <rect id="box_red_2" x="0" y="0" display="none" transform="translate(91, 176)" stroke="black" style="stroke-width: 1px;" width="31.763" height="20.9974" fill="orangered"/>
+
+
+</svg>

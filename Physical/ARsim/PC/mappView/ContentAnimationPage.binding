@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentAnimationPage_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:TotalTransform" attribute="value" samplingRate="fast" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="PaperConveyor" attribute="transform" />
+		</Binding>
+		
+		<!-- Retrieving global session variables --> 
+		<Binding mode="oneWay"> 
+			<Source xsi:type="session" refId="::SYSTEM:clientInfo.currentPageId" attribute="value" /> 
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gUI.CurrentPage" attribute="value" />
+		</Binding> 
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:ConveyorParameters.Velocity" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:ConveyorParameters.Acceleration" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:ConveyorParameters.Deceleration" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:ConveyorParameters.Direction" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="DropDownBox1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:ConveyorParameters.Position" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput6" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:ConveyorParameters.Distance" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput7" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:Conveyor.Velocity" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericOutput2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:Conveyor.Position" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericOutput1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:BoxPosition3" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericOutput5" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:BoxPosition2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericOutput4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:BoxPosition1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericOutput3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:wakeCommand" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:Conveyor.MoveAdditive" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:Conveyor.MoveVelocity" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::main:StartAutoMode" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton2" attribute="value" />
+		</Binding>	
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1Parameters.Velocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1Parameters.Acceleration" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1Parameters.Deceleration" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1Parameters.Direction" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="DropDownBox2" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1Parameters.Position" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1Parameters.Distance" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1.MoveAbsolute" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1.MoveAdditive" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:RRBotJ1.MoveVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="ToggleButton8" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::rrbotctrl:totalTransform" attribute="value" samplingRate="fast" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="PaperRobot" attribute="transform" />
+</Binding>
+</Bindings>
+</BindingsSet>

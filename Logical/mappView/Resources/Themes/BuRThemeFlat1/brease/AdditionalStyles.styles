@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Styles id="BuRThemeFlat1additionalStyles" xmlns="http://www.br-automation.com/iat2015/styles/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<Style id="IndicateState" xsi:type="widgets.brease.Button" fontSize="16px" bold="true" textColor="#474747" mouseDownTextColor="#FFFFFF" cornerRadius="0px" borderWidth="2px" borderColor="rgba(255, 0, 0, 0.5)" mouseDownBorderWidth="2px"  />
+
+	<Style id="IndicateState" xsi:type="widgets.brease.NumericOutput" borderWidth="2px" borderColor="rgba(255, 0, 0, 0.5)" backColor="transparent" textColor="#FF0000" fontSize="32px"  bold="true" />
+
+</Styles>

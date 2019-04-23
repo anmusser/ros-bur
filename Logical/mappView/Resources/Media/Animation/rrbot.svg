@@ -1,0 +1,17 @@
+<svg id='mySvg' height='100%' width='100%' viewBox='0 0 1000 1000' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+	<!-- Ground plane -->
+	<rect id="ground" x="0" y="900" display="true" stroke="black" style="stroke-width: 2px;" width="1000" height="3" fill="black"/>
+
+	<!-- Robots links -->
+	<g transform="translate(500,500)" xmlns="http://www.w3.org/2000/svg" class="cAll" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">	
+		<rect id="link0" x="0" y="0" display="true" stroke="black" style="stroke-width: 2px;" width="20" height="400" fill="orange"/>
+		<g id="joint1Group" transform="rotate(0,10,0)" xmlns="http://www.w3.org/2000/svg" class="cAll" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">	
+			<rect id="link1" x="0" y="0" display="true" stroke="black" style="stroke-width: 2px;" width="20" height="200" fill="blacks"/>
+			<g id="joint2Group" transform="rotate(0,10,202)" xmlns="http://www.w3.org/2000/svg" class="cAll" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" v:mID="4" v:groupContext="shape">	
+				<rect id="link2" x="0" y="200" display="true" stroke="black" style="stroke-width: 2px;" width="20" height="200" fill="orange"/>
+			</g>
+		</g>
+	</g>
+	
+</svg>

@@ -1,0 +1,18 @@
+VAR
+	joint2Position : UINT;
+	joint1Position : UINT;
+	PositionString : STRING[80];
+	joint1Transform : STRING[1000];
+	joint2Transform : STRING[1000];
+	totalTransform : STRING[10000];
+END_VAR
+VAR CONSTANT
+	PI : REAL := 3.14159;
+END_VAR
+VAR
+	RRBotJ1 : MpAxisBasic;
+	RRBotJ2 : MpAxisBasic;
+	OldParameters : MpAxisBasicParType;
+	RRBotJ1Parameters : MpAxisBasicParType;
+	RRBotJ2Parameters : MpAxisBasicParType;
+END_VAR

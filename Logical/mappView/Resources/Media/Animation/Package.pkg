@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.2.102?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">SGM small.svg</Object>
+    <Object Type="File">boxlift.svg</Object>
+    <Object Type="File">liftAnim.svg</Object>
+    <Object Type="File">shaft.svg</Object>
+    <Object Type="File">Chart.svg</Object>
+    <Object Type="File">conveyor.svg</Object>
+	<Object Type="File">rrbot.svg</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="4" ArVersion="D4.52">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
+        <ACE RoleId="1" RoleName="Administrators" Access="0x017F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x01FF" />
+        <ACE RoleId="1" RoleName="Administrators" Access="0x01FF" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="wakeCommand" />
+      </GlobalVariables>
+      <Task Name="main">
+        <Variable Name="ConveyorParameters">
+          <Variable Name="Acceleration" />
+          <Variable Name="Deceleration" />
+          <Variable Name="Velocity" />
+          <Variable Name="Position" />
+          <Variable Name="Distance" />
+          <Variable Name="Direction" />
+        </Variable>
+        <Variable Name="Conveyor">
+          <Variable Name="Position" />
+          <Variable Name="Velocity" />
+          <Variable Name="MoveVelocity" />
+          <Variable Name="MoveAbsolute" />
+          <Variable Name="MoveAdditive" />
+        </Variable>
+        <Variable Name="BoxPosition1" />
+        <Variable Name="BoxPosition2" />
+        <Variable Name="BoxPosition3" />
+        <Variable Name="StartAutoMode" />
+        <Variable Name="TotalTransform" />
+      </Task>
+      <Task Name="rrbotctrl">
+        <Variable Name="RRBotJ1Parameters">
+          <Variable Name="Acceleration" />
+          <Variable Name="Deceleration" />
+          <Variable Name="Velocity" />
+          <Variable Name="Position" />
+          <Variable Name="Distance" />
+          <Variable Name="Direction" />
+        </Variable>
+        <Variable Name="RRBotJ1">
+          <Variable Name="MoveVelocity" />
+          <Variable Name="MoveAbsolute" />
+          <Variable Name="MoveAdditive" />
+        </Variable>
+        <Variable Name="totalTransform" MinimumSamplingInterval="Timer1" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>
