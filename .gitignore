@@ -1,0 +1,9 @@
+Binaries/
+Temp/
+Diagnosis/
+AS/
+/*.set
+*.isopen
+*.orig
+*.bak
+
