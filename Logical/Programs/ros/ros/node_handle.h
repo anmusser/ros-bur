@@ -221,25 +221,19 @@ public:
     {
       configured_ = false;
     }
-//
-//    /* reset if message has timed out */
-//    if (mode_ != MODE_FIRST_FF)
-//    {
-//      if (c_time > last_msg_timeout_time)
-//      {
-//        mode_ = MODE_FIRST_FF;
-//      }
-//    }
-	
-	_msgSize = 0;
-		
-	INT counter = 0;
 
+    /* reset if message has timed out */
+    if (mode_ != MODE_FIRST_FF)
+    {
+      if (c_time > last_msg_timeout_time)
+      {
+        mode_ = MODE_FIRST_FF;
+      }
+    }
+		
     /* while available buffer, read data */
- //   while (counter < 1)
 	while (true)
     {
-	  counter++;
       // If a timeout has been specified, check how long spinOnce has been running.
       if (spin_timeout_ > 0)
       {
@@ -254,7 +248,6 @@ public:
         }
       }
       int data = hardware_.read();
-	  _recvCounter = data;
       if (data < 0)
         break;
       checksum_ += data;

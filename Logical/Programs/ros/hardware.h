@@ -141,13 +141,10 @@ class Hardware
 	/* Receives data from server. */
 	INT receiveData()
 	{
-//		if (!_tcpRecv.enable)
-//			_recvCounter = 0;
 		_tcpRecv.enable  = 1;
 		_tcpRecv.ident   = _ident;
 		while ((_tcpRecv.status == ERR_FUB_ENABLE_FALSE) || (_tcpRecv.status == ERR_FUB_BUSY))
 		{
-			_recvCounter = _recvCounter + 1;
 			TcpRecv(&_tcpRecv);
 		}
 
@@ -163,7 +160,7 @@ class Hardware
 			_recvTimeout 	   = _recvTimeout + 1;
 			_tcpRecv.enable = false;
 			TcpRecv(&_tcpRecv);
-			return -1;
+			return (-1 * _recvData);
 		}
 		else if (_tcpRecv.status == ERR_FUB_BUSY) 
 		{
