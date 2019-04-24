@@ -84,14 +84,14 @@
       <Parameter ID="InternetAddress" Value="10.10.10.1" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="ROS_0101a_ARsim" />
-    <Parameter ID="SystemTick" Value="400" />
+    <Parameter ID="SystemTick" Value="2000" />
     <Parameter ID="TaskClassIdleTime" Value="10000" />
-    <Parameter ID="Cyclic1Duration" Value="400" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
     <Parameter ID="Cyclic1Tolerance" Value="0" />
     <Parameter ID="Cyclic1Stack" Value="65535" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
-    <Parameter ID="Cyclic8Duration" Value="400" />
+    <Parameter ID="Cyclic8Duration" Value="2000" />
     <Parameter ID="Cyclic8Tolerance" Value="0" />
     <Parameter ID="Cyclic8Stack" Value="65535" />
     <Parameter ID="ActivateOpcUa" Value="1" />
