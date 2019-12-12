@@ -19,6 +19,10 @@
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="wakeCommand" />
+        <Variable Name="joint1ActualPosition" />
+        <Variable Name="joint2ActualPosition" />
+        <Variable Name="joint1PositionDegrees" />
+        <Variable Name="joint2PositionDegrees" />
       </GlobalVariables>
       <Task Name="main">
         <Variable Name="ConveyorParameters">

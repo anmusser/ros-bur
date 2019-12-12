@@ -37,18 +37,18 @@ PROGRAM _CYCLIC
 		// Logic to figure out where joint 1 is
 		joint1Position := REAL_TO_UINT((joint1ActualPosition * 180 / PI) + 180) MOD 360;
 		brsitoa(joint1Position,ADR(PositionString));
-		joint1Transform := '{"select":"#joint1Group","duration":10,"spin":[';
+		joint1Transform := '{"select":"#joint1Group","spin":[';
 		brsstrcat(ADR(joint1Transform),ADR(PositionString));
 		brsstrcat(ADR(joint1Transform),ADR(',10,0]}'));		
 		// Logic to figure out where joint 2 is
 		joint2Position := REAL_TO_UINT(joint2ActualPosition * 180 / PI) MOD 360;
 		brsitoa(joint2Position,ADR(PositionString));
-		joint2Transform := '{"select":"#joint2Group","duration":10,"spin":[';
+		joint2Transform := '{"select":"#joint2Group","spin":[';
 		brsstrcat(ADR(joint2Transform),ADR(PositionString));
 		brsstrcat(ADR(joint2Transform),ADR(',10,202]}'));
 	ELSE
-		joint1Transform := '{"select":"#joint1Group","duration":10,"spin":[0,10,0]}';
-		joint2Transform := '{"select":"#joint2Group","duration":10,"spin":[0,10,202]}';	
+		joint1Transform := '{"select":"#joint1Group","spin":[0,10,0]}';
+		joint2Transform := '{"select":"#joint2Group","spin":[0,10,202]}';	
 	END_IF
 	
 	// Creating the transform string from all elements
@@ -56,7 +56,10 @@ PROGRAM _CYCLIC
 	brsstrcat(ADR(totalTransform),ADR(joint1Transform));
 	brsstrcat(ADR(totalTransform),ADR(','));
 	brsstrcat(ADR(totalTransform),ADR(joint2Transform));
-	brsstrcat(ADR(totalTransform),ADR(']'));	
+	brsstrcat(ADR(totalTransform),ADR(']'));
+	
+	joint1PositionDegrees := fmod((joint1ActualPosition * 360 / (2 * 3.14159)) + 360, 360);
+	joint2PositionDegrees := fmod((joint2ActualPosition * 360 / (2 * 3.14159)) + 360, 360);
 	 
 END_PROGRAM
 

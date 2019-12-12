@@ -114,5 +114,15 @@
 <Source xsi:type="opcUa" refId="::rrbotctrl:totalTransform" attribute="value" samplingRate="fast" />
 <Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="PaperRobot" attribute="transform" />
 </Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:joint2PositionDegrees" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:joint1PositionDegrees" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentAnimationPage" widgetRefId="NumericInput11" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

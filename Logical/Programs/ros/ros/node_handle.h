@@ -234,6 +234,7 @@ public:
     /* while available buffer, read data */
 	while (true)
     {
+	  loopCounter++;
       // If a timeout has been specified, check how long spinOnce has been running.
       if (spin_timeout_ > 0)
       {

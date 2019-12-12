@@ -1,4 +1,6 @@
 VAR
+	joint2PositionDegrees : REAL;
+	joint1PositionDegrees : REAL;
 	joint1ActualPosition : REAL;
 	joint2ActualPosition : REAL;
 	joint2SetPosition : REAL;
